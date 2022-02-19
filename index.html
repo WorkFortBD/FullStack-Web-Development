@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class No #08 - Form</title>
+</head>
+
+<body>
+    <h2>Class No #08 - Form</h2>
+    <p>Github Tutorial</p>
+    <!-- <hr> -->
+
+    <form action="test.html" target="_blank" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Contact Us</legend>
+            <label for="name">Your Name</label><br>
+            <input type="text" id="name" placeholder="Please enter your name" minlength="4" maxlength="10" required />
+            <br>
+            <br>
+
+            <label for="age">Your Age</label><br>
+            <input type="number" id="age" placeholder="Please enter your age" min="0" max="200" required />
+            <br>
+            <br>
+
+            <label for="image">Your Image</label><br>
+            <input type="file" id="image" />
+            <br>
+            <br>
+
+            <label for="message">Your Message</label><br>
+            <textarea id="message" placeholder="Please enter your message" rows="5" cols="30"></textarea>
+            <br>
+            <br>
+        </fieldset>
+
+        <br>
+        <input type="checkbox" id="accept_terms"/> <label for="accept_terms">Accept this rules ?</label>
+        <br>
+        <br>
+
+        <label for="male">Your Gender</label><br>
+        <input type="radio" name="gender" id="male" />
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+        <br>
+        <input type="radio" name="gender" id="3rd-gender" />
+        <label for="3rd-gender">3rd Gender</label>
+        <br>
+
+        <br>
+        <label for="">Your City</label><br>
+        <select name="city">
+            <option value="dhaka">Dhaka</option>
+            <option value="mymensingh">Mymensingh</option>
+            <option value="faridpur">Faridpur</option>
+        </select>
+        <br>
+
+        <br>
+        <label for="">Your City</label><br>
+        <select name="city">
+            <option value="dhaka">Dhaka</option>
+            <option value="mymensingh">Mymensingh</option>
+            <option value="faridpur">Faridpur</option>
+        </select>
+        <br>
+
+        <br>
+        <label for="">Your Favorite Foods</label><br>
+        <select name="foods[]" multiple>
+            <option value="Rice">Rice</option>
+            <option value="Vegetables">Vegetables</option>
+            <option value="Beef">Beef</option>
+        </select>
+        <br>
+
+
+
+
+        <br>
+
+        <button type="submit">
+            <strong>Please</strong> Send
+        </button>
+        <button type="reset">Reset</button>
+        <!-- <input type="submit" value="Send Form" /> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+
+    <h2>Calculator</h2>
+    <input id="number1" type="number" /> +
+    <input id="number2" type="number" />
+    =<span id="result"></span>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <script>
+    // alert("Welcome to Javascript");
+        var number1 = parseInt(document.getElementById('number1').value);
+        var number2 = parseInt(document.getElementById('number2').value);
+        // alert(number1 + number2);
+
+        document.getElementById('result').innerHTML = number1 + number2;
+
+
+    </script>
+</body>
+
+</html>
