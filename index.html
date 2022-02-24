@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class No #08 - Form</title>
+    <meta name="description" content="DevsEnv" />
 </head>
 
 <body>
@@ -138,8 +139,11 @@
         </form>
 
     <h2>Calculator</h2>
-    <input id="number1" value="0" type="number" oninput="calculate()" /> +
-    <input id="number2" value="0" type="number" oninput="calculate()" />
+    <!-- <label for="number1">Number1:</label> -->
+    <input id="number1" value="0" type="number" aria-label="Enter Number 1" oninput="calculate()" /> +
+
+    <!-- <label for="number2">Number2:</label> -->
+    <input id="number2" value="0" type="number" aria-label="Enter Number 2" oninput="calculate()" />
     =<span id="result"></span>
 
 
