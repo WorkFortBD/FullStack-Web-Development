@@ -1,0 +1,54 @@
+.bg-red {
+    background: red;
+}
+
+#home-section-title {
+    color: blue;
+}
+
+/* .section-title {
+    color: white !important;
+    border-bottom: 1px solid;
+} */
+
+.section1-span {
+    color: yellow;
+}
+
+.section h2 {
+    font-size: 50px;
+    color: white !important;
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+.section span {
+    color: goldenrod
+}
+
+.section span .span-inner {
+    color: blue;
+}
+
+.section.active {
+    border-bottom: 5px solid green;
+}
+
+h2.home-title {
+    font-size: 100px;
+}
+
+
+/* #home-section {
+    text-align: center;
+} */
+
+/* #home-section span {
+    color: pink;
+}
+
+#email-input {
+    background: yellow;
+} */
+
+
