@@ -1,0 +1,116 @@
+/* h2 {
+    color: red;
+    font-size: 50px;
+} */
+body,
+html {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+}
+
+span {
+    background-color: red;
+    /* display: block; */
+}
+
+.div-hello p {
+    background-color: red;
+    display: inline-block;
+}
+
+code {
+    display: none;
+}
+
+.div3 {
+    background-color: red;
+    display: inline-block;
+    width: 100px;
+    /* height: 100px; */
+    /* height: 500px; */
+    /* max-width: 1200px; */
+    /* min-width: 200px; */
+    /* margin: 50px; */
+    /* margin-left: 50px; */
+    /* margin-top: 200px; */
+    /* padding: 10px; */
+    /* padding-left: 20px; */
+    /* padding: 10px 200px;
+    padding: 10px 50px 100px 200px; */
+
+    border: 2px solid green;
+    /* border-radius: 50%; */
+}
+
+.bg-image {
+    background-image: url(banner.jpg);
+    height: 200px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.font {
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-size: 30px;
+    /* font-family: 'Shizuru', cursive; */
+}
+
+.font p {
+    /* font-size: 1.5rem; */
+    /* font-size: 20px; */
+    /* font-size: 5vw; */
+    font-size: 5vh;
+}
+
+.font p span {
+    font-size: 1.2em;
+}
+
+.navbar {
+    background-color: royalblue;
+    padding: 10px;
+}
+
+.navbar-left {
+    float: left;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.navbar-right ul {
+    list-style: none;
+}
+
+.navbar-right ul li {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.cart {
+    position: relative;
+    width: 50px;
+    background: red;
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+}
+
+.cart-count {
+    position: absolute;
+    top: -15px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    border-radius: 15px;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+}
