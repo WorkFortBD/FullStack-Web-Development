@@ -1,0 +1,146 @@
+/************************************************
+            Normalize CSS
+***********************************************/
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+
+}
+
+p {
+
+} */
+
+.btn {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+/************************************************
+            Navbar CSS
+***********************************************/
+.navbar {
+    background-color: #12293b;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar .nav-inner {
+    padding: 10px 40px;
+}
+
+.navbar-left .nav-logo {
+    width: 100px;
+}
+
+.navbar-right ul {
+    list-style: none;
+}
+
+.navbar-right ul li {
+    display: inline-block;
+}
+
+.navbar-right ul li a.active {
+    border-bottom: 2px solid red;
+}
+
+.btn-portfolios {
+    position: relative;
+}
+
+.btn-portfolios .portfolio-count {
+    position: absolute;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    right: -4px;
+    top: -5px;
+    border-radius: 50%;
+    padding: 2px;
+    text-align: center;
+    color: #fff;
+}
+
+/************************************************
+            Header/Banner CSS
+***********************************************/
+.header-banner {
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    height: 100vh;
+}
+
+.header-texts {
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+    color: #fff;
+    left: 20%;
+    right: 20%;
+}
+
+.header-texts h2 {
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
+.header-texts p {
+    font-size: 1.2em;
+}
+
+.header-social a {
+    margin-right: 5px;
+    font-size: 0.8rem;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.header-social a.facebook {
+    background-color: #1876f2;
+}
+
+.header-social a.twitter {
+    background-color: #1d9bf0;
+}
+
+.header-social a.youtube {
+    background-color: red;
+}
+
+/************************************************
+            Content CSS
+***********************************************/
+.content {
+    padding: 40px;
+}
