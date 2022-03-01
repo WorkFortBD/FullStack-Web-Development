@@ -1,0 +1,133 @@
+:root {
+    --color-green: #1bd50e;
+    --color-red: #fd1d1d;
+
+    --font-sm: .875rem;
+    --font-base: 1rem;
+    --font-md: 1.2rem;
+    --font-lg: 1.5rem;
+}
+
+.btn {
+    background: red;
+    color: #fff;
+    padding: 10px;
+    font-size: var(--font-base);
+    text-decoration: none;
+    transition: .4s;
+    display: inline-block;
+    transform: scale(1);
+}
+
+
+.btn-sm {
+    font-size: var(--font-sm);
+}
+
+.btn-md {
+    font-size: var(--font-md);
+}
+
+.btn-lg {
+    font-size: var(--font-lg);
+}
+
+.btn:hover {
+    background: var(--color-green);
+    /* width: 200px; */
+    transform: scale(1.1);
+    /* transform: rotate(90deg); */
+}
+
+.btn:focus {
+    background: yellow;
+    text-decoration: none;
+}
+
+.btn:active {
+    background: pink;
+    text-decoration: none;
+}
+
+input:focus {
+    border: 2px solid var(--color-green);
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "";
+    background-image: url(images/checkbox.png);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+
+.div1 p {
+    color: red;
+}
+
+.div1 > p {
+    color: blue;
+}
+
+.div1 + img {
+    border: 1px solid var(--color-green);
+}
+
+.div2 a[title] {
+    color: green;
+}
+
+.div2 a[title="Hello Akash"] {
+    color: black;
+}
+
+.div2 ~ a {
+    background-color: red;
+}
+
+.my-tasks li:first-child {
+    color: green;
+}
+
+.my-tasks li:nth-child(2n) {
+    color: blue;
+}
+
+.simple-button {
+    /* background: red; */
+    color: #fff;
+    border: 0px solid;
+    box-shadow: 3px 2px 8px 1px #8b8b8bbf;
+    padding: 10px;
+    /* text-shadow: 5px 5px; */
+    background: rgb(14, 206, 206);
+    background: linear-gradient(
+        90deg,
+        rgba(14, 206, 206, 1) 2%,
+        rgba(33, 205, 205, 1) 13%,
+        rgba(14, 165, 170, 1) 49%,
+        rgba(0, 212, 255, 1) 100%
+    );
+}
+
+.overflow-div {
+    /* height: 200px; */
+    /* overflow: auto;
+    overflow-x: scroll;
+    overflow-y: hidden; */
+    background: rgb(14, 206, 206);
+    background: linear-gradient(
+        90deg,
+        rgba(14, 206, 206, 1) 2%,
+        rgba(33, 205, 205, 1) 13%,
+        rgba(14, 165, 170, 1) 49%,
+        rgba(0, 212, 255, 1) 100%
+    );
+}
