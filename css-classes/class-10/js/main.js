@@ -21,4 +21,24 @@ $(document).ready(function () {
             });
         } // End if
     });
+
+    $('.navbar-toggle').on('click', function () {
+        $('.mobile-navbar').toggleClass('mobile-navbar-sidebar-open');
+        $('#toggle-icon').toggleClass('fa-times');
+    });
+
+    $(window).click(function () {
+        $('.mobile-navbar').removeClass('mobile-navbar-sidebar-open');
+        $('#toggle-icon').addClass('fa-bars');
+        $('#toggle-icon').removeClass('fa-times');
+    });
+
+    $('.navbar-toggle').on('click', function (event) {
+        event.stopPropagation();
+    });
+
+    $('.mobile-navbar').on('click', function (event) {
+        event.stopPropagation();
+    });
+
 });
