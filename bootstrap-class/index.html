@@ -39,7 +39,15 @@
 
                 <ul class="navbar-nav navbar-right mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">My Account</a>
+                        <a class="nav-link text-success" aria-current="page" href="#">
+                            Sign Up
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" aria-current="page" href="#" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">
+                            Sign In
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -346,10 +354,131 @@
         </div>
     </section>
 
+    <section id="contact" class="pt-5 mt-5 bg-white">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p><span class="text-danger">*</span> marks is required</p>
+
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                    <label for="validationCustom01" class="form-label">
+                        First name <span class="text-danger">*</span>
+                    </label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                    <div class="invalid-feedback">
+                        Please give your first name.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom02" class="form-label">
+                        Last name
+                        <span class="text-danger">*</span>
+                    </label>
+                    <input type="text" class="form-control" id="validationCustom02">
+                    <div class="invalid-feedback">
+                        Please give your last name.
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" required>
+                    <div class="invalid-feedback">
+                        Please give your message subject.
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="message" class="form-label">
+                        Message
+                        <span class="text-danger">*</span>
+                    </label>
+                    <textarea class="form-control" rows="3" id="message" required></textarea>
+                    <div class="invalid-feedback">
+                        Please give your message message.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-12">
+                            <label for="validationCustom01" class="form-label">
+                                Username <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="validationCustom01" required>
+                            <div class="invalid-feedback">
+                                Please give your username
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationCustom01" class="form-label">
+                                Password <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="validationCustom01" required>
+                            <div class="invalid-feedback">
+                                Please give your password
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <p class="d-grid mt-5">
+                                <button class="btn btn-success btn-block" type="submit">
+                                    Login
+                                </button>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div style="margin-top: 300px;"></div>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
 </body>
 
 </html>

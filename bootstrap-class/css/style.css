@@ -7,12 +7,10 @@ body {
                     Navbar CSS
 /*********************************************************/
 .main-navbar {
-    background: rgb(154, 246, 249);
-    background: linear-gradient(90deg, rgba(154, 246, 249, 1) 8%, rgba(36, 230, 207, 1) 46%, rgba(0, 212, 255, 1) 94%);
+    background: white;
 }
 
 .main-navbar .nav-link {
-    color: #a605d2 !important;
     font-weight: bold;
 }
 
