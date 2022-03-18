@@ -1,0 +1,21 @@
+{
+  "name": "fullstack-scss",
+  "version": "0.0.1",
+  "description": "Fullstack boilerplate with SCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack"
+  },
+  "keywords": [
+    "scss",
+    "fullstack",
+    "course"
+  ],
+  "author": "akash <manirujjamakash@gmail.com>",
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
