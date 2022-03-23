@@ -4,3 +4,5 @@
 // console.log(name);
 
 // alert('Hi Akash');
+
+import './style.scss';
