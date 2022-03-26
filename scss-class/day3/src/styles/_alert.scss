@@ -1,0 +1,35 @@
+// %alert {
+//     background-color: #ccc;
+//     padding: 10px;
+//     border: 1px solid #ccc;
+// }
+
+
+// .alert-success {
+//     @extend %alert;
+//     background-color: green;
+//     color: #fff;
+//     border: 1px solid $color-black;
+// }
+
+// .alert-danger {
+//     @extend %alert;
+//     background-color: red;
+//     color: #fff;
+//     border: 1px solid $color-black;
+// }
+
+@mixin alert($bg: $bg-color) {
+    background-color: $bg;
+    padding: 10px;
+    color: #fff;
+    border: 1px solid $color-black;
+}
+
+.alert-success {
+    @include alert(green);
+}
+
+.alert-danger {
+    @include alert(red);
+}

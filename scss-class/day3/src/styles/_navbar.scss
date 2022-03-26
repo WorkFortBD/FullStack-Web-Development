@@ -1,0 +1,31 @@
+/****************************************/
+/*          Navbar SCSS
+/****************************************/
+nav {
+    background-color: $bg-color;
+    padding: $p-sm;
+
+    ul {
+        list-style: none;
+        padding-left: 0px;
+        background-color: green;
+
+        li {
+            background: red;
+            display: inline-block;
+
+            a {
+                // background: yellow;
+                color: $color-white;
+                padding: 10px;
+                display: inline-block;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: $bg-color-dark;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}

@@ -5,4 +5,4 @@
 
 // alert('Hi Akash');
 
-import './style.scss';
+import './styles/main.scss';

@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/style.scss":
-/*!************************!*\
-  !*** ./src/style.scss ***!
-  \************************/
+/***/ "./src/styles/main.scss":
+/*!******************************!*\
+  !*** ./src/styles/main.scss ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://fullstack-scss/./src/style.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://fullstack-scss/./src/styles/main.scss?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n// console.log('I have been called.');\n\n// const name = \"Akash\";\n// console.log(name);\n\n// alert('Hi Akash');\n\n\n\n//# sourceURL=webpack://fullstack-scss/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n// console.log('I have been called.');\n\n// const name = \"Akash\";\n// console.log(name);\n\n// alert('Hi Akash');\n\n\n\n//# sourceURL=webpack://fullstack-scss/./src/index.js?");
 
 /***/ })
 

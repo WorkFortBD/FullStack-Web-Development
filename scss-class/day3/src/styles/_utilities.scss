@@ -1,0 +1,38 @@
+// .pt-0 {
+//     padding-top: 0px;
+// }
+
+// .pt-5 {
+//     padding-top: 5px;
+// }
+
+// .pt-10 {
+//     padding-top: 10px;
+// }
+
+// .pt-15 {
+//     padding-top: 15px;
+// }
+
+// .pt-20 {
+//     padding-top: 20px;
+// }
+
+// .pt-30 {
+//     padding-top: 30px;
+// }
+
+$spaceamounts: (0, 5, 10, 15, 20, 30, 50, 70, 90, 100, 150);
+$sides: (top, right, bottom, left);
+
+@each $space in $spaceamounts {
+    .p-#{$space} {
+        padding: #{$space}px !important;
+    }
+
+    @each $side in $sides {
+        .p#{str-slice($side, 0, 1)}-#{$space} {
+            padding-#{$side}: #{$space}px !important;
+        }
+    }
+}
