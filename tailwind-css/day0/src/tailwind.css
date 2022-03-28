@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-item {
+    @apply inline-block min-w-[100px] p-6 hover:px-7 hover:bg-teal-700 text-center transition-all hover:text-white border-b-2 hover:font-semibold border-b-transparent hover:border-b-2 hover:border-blue-900;
+}
