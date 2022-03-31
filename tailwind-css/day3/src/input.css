@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply pl-6 pr-6 p-3 lg:pl-10 lg:pr-10 text-white border-0 border-transparent hover:opacity-80 text-left;
+    }
+
+    .btn-info {
+        @apply bg-teal-600 hover:bg-teal-700;
+    }
+
+    .btn-warning {
+        @apply bg-yellow-600 hover:bg-yellow-700;
+    }
+}
+
+.btn-default {
+    @apply bg-slate-100;
+}
