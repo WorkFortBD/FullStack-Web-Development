@@ -1,0 +1,135 @@
+<!doctype html>
+<html class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="p-5 bg-gray-100 dark:bg-slate-900">
+    <h2 class="text-black dark:text-white tab-50">
+        Tailwind CSS Class #06
+    </h2>
+    <hr>
+
+    <div class="bg-blue-600 p-10">
+        <h2 class="font-bold text-4xl py-20 text-center dark:text-white text-slate-800">
+            Our Teams
+
+            <button onclick="toggleDarkMode()"
+                class="p-2 border-0 bg-slate-600 dark:bg-slate-100 text-slate-100 dark:text-slate-800 text-sm">
+                Change Mode
+            </button>
+        </h2>
+        <div class="flex flex-col md:flex-row flex-wrap">
+            <div
+                class="flex-1 bg-white dark:bg-slate-600 p-3 hover:bg-gray-100 dark:hover:bg-slate-800 transition cursor-pointer hover:-translate-y-6 mb-10">
+                <div class="bg-teal-500 w-20 h-20 m-auto rounded-full flex justify-center -mt-10">
+                    <h3 class="text-center font-serif font-medium text-4xl m-auto text-white">
+                        01
+                    </h3>
+                </div>
+                <div class="py-8 px-6 text-center">
+                    <p class="text-gray-500 dark:text-white dark:hover:text-slate-100 p-4">
+                        Article evident arrived express highest men did boy. Mistress sensible entirely am so. Quick can
+                        manor smart money hopes worth too. Comfort produce husband boy her had hearing. Law others
+                        theirs
+                        passed but wishes. You day real less till dear read less till dear rea.
+                    </p>
+                    <p class="mt-5">
+                        <img src="images/profile.jpeg" alt="" class="w-20 h-20 rounded-full m-auto">
+                    </p>
+                    <h3 class="font-serif  mt-3 text-black dark:text-slate-50 text-3xl font-medium">
+                        Josh Larson
+                    </h3>
+                    <h4 class="font-thin text-slate-500 dark:text-slate-50 mt-3">
+                        CEO & Founder
+                    </h4>
+                </div>
+            </div>
+            <div class="flex-1 bg-gray-200 p-3 hover:bg-gray-300 transition cursor-pointer hover:-translate-y-6 mb-10">
+                <div class="bg-teal-500 w-20 h-20 m-auto rounded-full flex justify-center -mt-10">
+                    <h3 class="text-center font-serif font-medium text-4xl m-auto text-white">
+                        02
+                    </h3>
+                </div>
+                <div class="py-8 px-6 text-center">
+                    <p class="text-gray-500 p-4">
+                        Article evident arrived express highest men did boy. Mistress sensible entirely am so. Quick can
+                        manor smart money hopes worth too. Comfort produce husband boy her had hearing. Law others
+                        theirs
+                        passed but wishes. You day real less till dear read less till dear rea.
+                    </p>
+                    <p class="mt-5">
+                        <img src="images/profile.jpeg" alt="" class="w-20 h-20 rounded-full m-auto">
+                    </p>
+                    <h3 class="font-serif  mt-3 text-black text-3xl font-medium">
+                        Josh Larson
+                    </h3>
+                    <h4 class="font-thin text-slate-500 mt-3">
+                        CEO & Founder
+                    </h4>
+                </div>
+            </div>
+            <div
+                class="flex-1 bg-white dark:bg-slate-600 p-3 hover:bg-gray-100 dark:hover:bg-slate-800 transition cursor-pointer hover:-translate-y-6 mb-10">
+                <div class="bg-teal-500 w-20 h-20 m-auto rounded-full flex justify-center -mt-10">
+                    <h3 class="text-center font-serif font-medium text-4xl m-auto text-white">
+                        01
+                    </h3>
+                </div>
+                <div class="py-8 px-6 text-center">
+                    <p class="text-gray-500 dark:text-white dark:hover:text-slate-100 p-4">
+                        Article evident arrived express highest men did boy. Mistress sensible entirely am so. Quick can
+                        manor smart money hopes worth too. Comfort produce husband boy her had hearing. Law others
+                        theirs
+                        passed but wishes. You day real less till dear read less till dear rea.
+                    </p>
+                    <p class="mt-5">
+                        <img src="images/profile.jpeg" alt="" class="w-20 h-20 rounded-full m-auto">
+                    </p>
+                    <h3 class="font-serif  mt-3 text-black dark:text-slate-50 text-3xl font-medium">
+                        Josh Larson
+                    </h3>
+                    <h4 class="font-thin text-slate-500 dark:text-slate-50 mt-3">
+                        CEO & Founder
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme:dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+
+        // Whenever the user explicitly chooses light mode
+        localStorage.theme = 'light'
+
+        // Whenever the user explicitly chooses dark mode
+        localStorage.theme = 'dark'
+
+        // Whenever the user explicitly chooses to respect the OS preference
+        localStorage.removeItem('theme');
+
+        function toggleDarkMode() {
+            console.log('coming');
+            const theme = localStorage.getItem('theme');
+            console.log('theme', theme);
+            if (typeof theme === 'string' && theme === 'dark') {
+                localStorage.removeItem('theme');
+                document.documentElement.classList.remove('dark')
+            } else {
+                localStorage.setItem('theme', 'dark');
+                document.documentElement.classList.add('dark')
+            }
+        }
+    </script>
+</body>
+
+</html>
