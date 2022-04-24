@@ -99,4 +99,19 @@ $(document).ready(function() {
       $("#scroll-to-top").addClass("hidden");
     }
   });
+
+  /*********************************************
+  *  Collapse Button implementation
+  /*********************************************/
+  $(".collapse-button").click(function(e) {
+    const parent = $(this).children(":nth-child(2)");
+    if (parent.children().hasClass("fa-chevron-down")) {
+      parent.children().removeClass("fa-chevron-down");
+      parent.children().addClass("fa-chevron-up");
+    } else {
+      parent.children().addClass("fa-chevron-down");
+      parent.children().removeClass("fa-chevron-up");
+    }
+    $(this).next().slideToggle("slow");
+  });
 });
